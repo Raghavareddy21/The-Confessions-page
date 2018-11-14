@@ -1,0 +1,19 @@
+{% extends 'Confession/Home.html'%}
+{% block content %}
+<div id="page-content-wrapper">
+
+    <div class="container-fluid">
+        <center><h1>The Confessions Page</h1></center>
+        <div class="card-deck">
+          {% for confessions in Confessions%}
+  <div class="card bg-primary">
+    <div class="card-body text-center">
+      <p class="card-text">{{confessions.Confession}}</p>
+    </div>
+  </div>
+  {%endfor%}
+  </div>
+
+    </div>
+</div>
+{% endblock %}
